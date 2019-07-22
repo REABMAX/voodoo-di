@@ -1,8 +1,8 @@
 {
   "name": "voodoo/di",
-  "description": "DI-Container configuration package",
+  "description": "DI configuration package",
   "minimum-stability": "stable",
-  "license": "proprietary",
+  "license": "MIT",
   "authors": [
     {
       "name": "Max Schröter",
@@ -16,14 +16,14 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Voodoo\\Di\\": "tests/unit"
+      "Voodoo\\Di\\Tests\\": "tests"
     }
   },
   "require": {
-    "symfony/event-dispatcher": "v4.1.6",
-    "aura/di": "3.4.0"
+    "psr/container": "^1.0",
+    "league/container": "^3.3"
   },
   "require-dev": {
-    "phpunit/phpunit": "7.4.3"
+    "codeception/codeception": "^3.0"
   }
 }
